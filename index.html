@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Alt Text Generator Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Testing Image Alt Text Generation</h1>
+    <p>This page demonstrates the functionality of the image alt text generation script.</p>
+
+    <img src="https://via.placeholder.com/200">
+    <img src="https://via.placeholder.com/200" alt="Alt text">
+    <img src="https://via.placeholder.com/200">
+
+    <hr>
+
+    <div>
+        <button id="addImageButton">Create new Image</button>
+    </div>
+  
+    <script src="index.js"></script>
+    <script>
+        enhanceImagesWithAltText();
+    </script>
+    <script>
+        document.getElementById('addImageButton').addEventListener('click', () => {
+            const newImg = document.createElement('img');
+            newImg.src = 'https://via.placeholder.com/200';
+            document.body.appendChild(newImg);
+        });
+    </script>
+</body>
+</html>

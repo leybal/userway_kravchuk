@@ -1,0 +1,11 @@
+.highlighted-img {
+    border: 2px solid red;
+    box-shadow: 0 0 10px red;
+}
+
+.alt-input {
+    position: absolute;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 14px;
+}
